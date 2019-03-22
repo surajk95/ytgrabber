@@ -14,6 +14,7 @@
 ![Mobile screenshot](https://i.imgur.com/3a4LsSN.png)
 ----
 ## How to run
+* fork or clone repository
 * npm i
 * npm start
 
