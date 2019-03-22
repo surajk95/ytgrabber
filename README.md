@@ -10,8 +10,8 @@
 ----
 ## Check master branch for source code.
 
-![Desktop screenshot](https://imgur.com/hBUDxiB)
-![Mobile screenshot](https://imgur.com/3a4LsSN)
+![Desktop screenshot](https://i.imgur.com/hBUDxiB.png)
+![Mobile screenshot](https://i.imgur.com/3a4LsSN.png)
 ----
 ## How to run
 * npm i
