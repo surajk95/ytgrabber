@@ -1,7 +1,14 @@
 {
-  "main.css": "static/css/main.160d8bf8.css",
-  "main.css.map": "static/css/main.160d8bf8.css.map",
-  "main.js": "static/js/main.322f28a8.js",
-  "main.js.map": "static/js/main.322f28a8.js.map",
-  "static/media/bg.jpg": "static/media/bg.6a689335.jpg"
+  "main.css": "/ytgrabber/static/css/main.59a011cf.chunk.css",
+  "main.js": "/ytgrabber/static/js/main.fc086ba5.chunk.js",
+  "main.js.map": "/ytgrabber/static/js/main.fc086ba5.chunk.js.map",
+  "runtime~main.js": "/ytgrabber/static/js/runtime~main.1c97cce3.js",
+  "runtime~main.js.map": "/ytgrabber/static/js/runtime~main.1c97cce3.js.map",
+  "static/js/2.4f017e5b.chunk.js": "/ytgrabber/static/js/2.4f017e5b.chunk.js",
+  "static/js/2.4f017e5b.chunk.js.map": "/ytgrabber/static/js/2.4f017e5b.chunk.js.map",
+  "index.html": "/ytgrabber/index.html",
+  "precache-manifest.fa79217a21f9492dae064f190da26c33.js": "/ytgrabber/precache-manifest.fa79217a21f9492dae064f190da26c33.js",
+  "service-worker.js": "/ytgrabber/service-worker.js",
+  "static/css/main.59a011cf.chunk.css.map": "/ytgrabber/static/css/main.59a011cf.chunk.css.map",
+  "static/media/App.scss": "/ytgrabber/static/media/bg.5edfd059.jpg"
 }
