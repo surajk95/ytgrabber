@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
 
 body{
   height: 100vh;
   width: 100vw;
-  background-image: url('./assets/bg.jpg');
+  background-image: url('./assets/pattern.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
   color: white;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .App {
@@ -17,28 +19,41 @@ body{
 }
 
 .appTitle{
-  font-family: 'Dancing Script', cursive;
+  padding: 0 25%;
+  text-align: left;
   a{
     text-decoration: none;
     color: white;
   }
-  margin: 100px 0;
+  margin: 50px 0;
   .appName{
     color: white;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 100px;
+  }
+  .appDescription {
+    font-size: 28px;
   }
 }
 
 .Form{
   margin-bottom: 100px;
   color: black;
+  padding: 0 25%;
   .Input{
     padding: 15px 20px;
-    font-size: 1em;
-    width: 40vw;
-    border-radius: 5px;
-    border: 0;
+    font-size: 28px;
+    color: white;
+    width: 100%;
+    font-family: inherit;
+    text-align: center;
+    text-overflow: ellipsis;
+    background-color: black;
+    border-radius: 0;
+    border: solid 1px gray;
+    &:focus {
+      outline: none;
+    }
   }
 
   .Button{
@@ -54,11 +69,12 @@ body{
 .results-container{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     .qualHeader{
-      background-color: white;
-      color: black;
+      background-color: black;
+      color: white;
       padding: 5px 10px;
-      border-radius: 2px;
+      text-decoration: underline;
     }
     .img-container{
       width: 300px;
@@ -69,9 +85,19 @@ body{
 }
 
 @media (max-width: 1024px){
+  .appTitle {
+    padding: 0 15%;
+    margin: 50px 0;
+  }
   .Form{
-      margin-top: 30px;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 10px 0;
+      max-width: 100%;
+      .Input {
+        max-width: 100%;
+        width: auto;
+      }
   }
 
   .results-container{

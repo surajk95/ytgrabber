@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   changeUrl=(text)=>{
-    console.log(this.state.url);
+    //console.log(this.state.url);
     this.setState((prevState)=>({
       url:text
     }));
@@ -26,19 +26,25 @@ class App extends Component {
 
   fetchImage=()=>{
     if(this.state.url){
-      let aaa = /(.*)(com|be)\/(watch\?v=)?(.{11})[?|&]?.*/g;
-      let imgUrl = aaa.exec(this.state.url)[4];
-      //console.log(`${imgUrl}`);
-      //console.log("Fetching Image for "+this.state.url);
-      let newmq="https://i.ytimg.com/vi/"+imgUrl+"/mqdefault.jpg";
-      let newhq="https://i.ytimg.com/vi/"+imgUrl+"/hqdefault.jpg";
-      let newmaxres="https://i.ytimg.com/vi/"+imgUrl+"/maxresdefault.jpg";
-      //console.log(newImgUrl);
-      this.setState((prevState)=>({
-        mq: newmq,
-        hq: newhq,
-        maxres: newmaxres
-      }))
+      try {
+        let aaa = /(.*)(com|be)\/(watch\?v=)?(.{11})[?|&]?.*/g;
+        let imgUrl = aaa.exec(this.state.url)[4];
+        //console.log(`${imgUrl}`);
+        //console.log("Fetching Image for "+this.state.url);
+        let newmq="https://i.ytimg.com/vi/"+imgUrl+"/mqdefault.jpg";
+        let newhq="https://i.ytimg.com/vi/"+imgUrl+"/hqdefault.jpg";
+        let newmaxres="https://i.ytimg.com/vi/"+imgUrl+"/maxresdefault.jpg";
+        //console.log(newImgUrl);
+        this.setState((prevState)=>({
+          mq: newmq,
+          hq: newhq,
+          maxres: newmaxres
+        }))
+      }
+     catch {
+       //console.log(`error`);
+       alert(`Link is not valid, please try with a different one.`)
+     }
     }
   }
 
@@ -50,8 +56,8 @@ class App extends Component {
             !this.state.hq?
             <div className="appTitle">
             <a href="http://surajk95.github.io/">
-              <div className="appName">YtGrabber</div>
-              by surajk95
+              <div className="appName">YTG</div>
+              <div className="appDescription">YOUTUBE THUMBNAIL GRABBER</div>
               </a>
           </div>
         :

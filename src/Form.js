@@ -21,23 +21,23 @@ class Form extends Component {
   render() {
     return (
       <div className="App">
-        <form  className="Form">
+        <form onSubmit={this.submitUrl} className="Form">
           <input
             autoFocus
             className="Input"
-            type="text"placeholder="Enter Youtube URL"
+            type="text"placeholder="PASTE LINK HERE"
             value={this.props.url}
             onChange={this.handleChange}
             >
           </input>
-          &nbsp;
+          {/* &nbsp;
           <button
             className="Button"
             type="submit"
             onClick={this.submitUrl}
           >
             GET
-          </button>
+          </button> */}
         </form>
       </div>
     );
